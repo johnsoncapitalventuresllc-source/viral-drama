@@ -1,0 +1,34 @@
+{
+  "characters": {
+    "producer": {
+      "name": "Producer",
+      "initials": "PR",
+      "placeholderGradient": "linear-gradient(135deg, #39e8ff, #8d4dff)"
+    },
+    "lexi": {
+      "name": "Lexi",
+      "initials": "LX",
+      "placeholderGradient": "linear-gradient(135deg, #ff3bbd, #ff9ee7)"
+    },
+    "jade": {
+      "name": "Jade",
+      "initials": "JD",
+      "placeholderGradient": "linear-gradient(135deg, #111111, #39e8ff)"
+    },
+    "marcus": {
+      "name": "Marcus",
+      "initials": "MC",
+      "placeholderGradient": "linear-gradient(135deg, #8d4dff, #39e8ff)"
+    },
+    "nova": {
+      "name": "Nova",
+      "initials": "NV",
+      "placeholderGradient": "linear-gradient(135deg, #faff00, #ff3bbd)"
+    },
+    "host": {
+      "name": "Host",
+      "initials": "TV",
+      "placeholderGradient": "linear-gradient(135deg, #ffffff, #ff3bbd)"
+    }
+  }
+}

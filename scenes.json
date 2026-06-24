@@ -1,0 +1,17 @@
+{
+  "notes": "This file is reserved for future scene metadata like background image filenames, music, lighting, and camera mood.",
+  "backgrounds": {
+    "outside_house": {
+      "file": "assets/backgrounds/outside_house.png",
+      "description": "Placeholder for the exterior of the Viral Drama mansion."
+    },
+    "foyer": {
+      "file": "assets/backgrounds/foyer.png",
+      "description": "Placeholder for neon luxury foyer."
+    },
+    "confessional": {
+      "file": "assets/backgrounds/confessional.png",
+      "description": "Placeholder for glowing confessional room."
+    }
+  }
+}

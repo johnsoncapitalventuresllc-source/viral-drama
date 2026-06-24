@@ -1,0 +1,430 @@
+{
+  "start": "intro_001",
+  "scenes": {
+    "intro_001": {
+      "label": "Day 1: Outside the House",
+      "character": "producer",
+      "dialogue": "DramaPop TV presents Viral Drama. Sixteen strangers. One house. One hundred cameras. Millions watching. And absolutely no privacy.",
+      "choices": [
+        {
+          "text": "Step toward the front door.",
+          "next": "intro_002"
+        }
+      ]
+    },
+    "intro_002": {
+      "label": "Day 1: Producer Interview",
+      "character": "producer",
+      "dialogue": "Before you walk in, {player}, tell the audience what brings you to Viral Drama.",
+      "choices": [
+        {
+          "text": "I want fame.",
+          "next": "arrival_001",
+          "effects": {
+            "stats": {
+              "followers": 5,
+              "popularity": 2
+            }
+          }
+        },
+        {
+          "text": "I want the money.",
+          "next": "arrival_001",
+          "effects": {
+            "stats": {
+              "influence": 2,
+              "trust": -1
+            }
+          }
+        },
+        {
+          "text": "I want the experience.",
+          "next": "arrival_001",
+          "effects": {
+            "stats": {
+              "trust": 2
+            }
+          }
+        },
+        {
+          "text": "I just love drama.",
+          "next": "arrival_001",
+          "effects": {
+            "stats": {
+              "drama": 5,
+              "threat": 1
+            }
+          }
+        }
+      ]
+    },
+    "arrival_001": {
+      "label": "Day 1: Foyer",
+      "character": "host",
+      "dialogue": "The doors slide open. Neon lights sweep across a mansion that looks half luxury villa, half spaceship. Welcome to the house.",
+      "choices": [
+        {
+          "text": "Enter like you own the place.",
+          "next": "meet_lexi",
+          "effects": {
+            "stats": {
+              "popularity": 1,
+              "threat": 1
+            }
+          }
+        },
+        {
+          "text": "Smile and play it humble.",
+          "next": "meet_lexi",
+          "effects": {
+            "stats": {
+              "trust": 1
+            }
+          }
+        },
+        {
+          "text": "Look for cameras immediately.",
+          "next": "meet_lexi",
+          "effects": {
+            "stats": {
+              "influence": 1
+            }
+          }
+        }
+      ]
+    },
+    "meet_lexi": {
+      "label": "Day 1: Meet Lexi",
+      "character": "lexi",
+      "dialogue": "Lexi looks you up and down, already posing for the nearest camera. 'Cute entrance. Risky outfit choice though.'",
+      "choices": [
+        {
+          "text": "Compliment her look.",
+          "next": "meet_jade",
+          "effects": {
+            "relationships": {
+              "lexi": 1
+            },
+            "stats": {
+              "trust": 1
+            }
+          }
+        },
+        {
+          "text": "Tell her she sounds jealous.",
+          "next": "meet_jade",
+          "effects": {
+            "relationships": {
+              "lexi": -1
+            },
+            "stats": {
+              "drama": 2,
+              "followers": 2,
+              "threat": 1
+            }
+          }
+        },
+        {
+          "text": "Ignore the shade.",
+          "next": "meet_jade",
+          "effects": {
+            "stats": {
+              "trust": 1,
+              "threat": -1
+            }
+          }
+        }
+      ]
+    },
+    "meet_jade": {
+      "label": "Day 1: Meet Jade",
+      "character": "jade",
+      "dialogue": "Jade leans against the kitchen island with a smirk. 'First rule: never trust someone who says they are here for friendship.'",
+      "choices": [
+        {
+          "text": "Laugh and agree.",
+          "next": "meet_marcus",
+          "effects": {
+            "relationships": {
+              "jade": 1
+            },
+            "stats": {
+              "popularity": 1
+            }
+          }
+        },
+        {
+          "text": "Say you might actually be trustworthy.",
+          "next": "meet_marcus",
+          "effects": {
+            "relationships": {
+              "jade": 1
+            },
+            "stats": {
+              "trust": 1
+            }
+          }
+        },
+        {
+          "text": "Ask if that includes her.",
+          "next": "meet_marcus",
+          "effects": {
+            "relationships": {
+              "jade": -1
+            },
+            "stats": {
+              "drama": 1,
+              "influence": 1
+            }
+          }
+        }
+      ]
+    },
+    "meet_marcus": {
+      "label": "Day 1: Meet Marcus",
+      "character": "marcus",
+      "dialogue": "Marcus is already doing pushups in the lounge. 'I am not here to lose. But I respect competition.'",
+      "choices": [
+        {
+          "text": "Tell him you respect winners.",
+          "next": "meet_nova",
+          "effects": {
+            "relationships": {
+              "marcus": 1
+            },
+            "stats": {
+              "influence": 1
+            }
+          }
+        },
+        {
+          "text": "Challenge him immediately.",
+          "next": "meet_nova",
+          "effects": {
+            "relationships": {
+              "marcus": -1
+            },
+            "stats": {
+              "drama": 2,
+              "threat": 2
+            }
+          }
+        },
+        {
+          "text": "Let him have the spotlight.",
+          "next": "meet_nova",
+          "effects": {
+            "stats": {
+              "threat": -1,
+              "trust": 1
+            }
+          }
+        }
+      ]
+    },
+    "meet_nova": {
+      "label": "Day 1: Meet Nova",
+      "character": "nova",
+      "dialogue": "Nova appears from behind a plant. 'I have already named the cameras. That one is Gregory. Gregory is messy.'",
+      "choices": [
+        {
+          "text": "Say Gregory looks suspicious.",
+          "next": "confessional_001",
+          "effects": {
+            "relationships": {
+              "nova": 1
+            },
+            "stats": {
+              "popularity": 1
+            }
+          }
+        },
+        {
+          "text": "Back away slowly.",
+          "next": "confessional_001",
+          "effects": {
+            "relationships": {
+              "nova": -1
+            },
+            "stats": {
+              "trust": -1
+            }
+          }
+        },
+        {
+          "text": "Ask Nova what else the cameras know.",
+          "next": "confessional_001",
+          "effects": {
+            "relationships": {
+              "nova": 1
+            },
+            "stats": {
+              "influence": 1
+            }
+          }
+        }
+      ]
+    },
+    "confessional_001": {
+      "label": "Day 1: Confessional",
+      "character": "producer",
+      "dialogue": "You sit in the glowing confessional chair. A producer asks, 'First impressions?'",
+      "choices": [
+        {
+          "text": "Everyone seems cool.",
+          "next": "challenge_001",
+          "effects": {
+            "stats": {
+              "trust": 2
+            }
+          }
+        },
+        {
+          "text": "These people are fake.",
+          "next": "challenge_001",
+          "effects": {
+            "stats": {
+              "drama": 2,
+              "followers": 2
+            }
+          }
+        },
+        {
+          "text": "I am already plotting.",
+          "next": "challenge_001",
+          "effects": {
+            "stats": {
+              "influence": 2,
+              "threat": 1
+            }
+          }
+        },
+        {
+          "text": "I might have a crush already.",
+          "next": "challenge_001",
+          "effects": {
+            "stats": {
+              "popularity": 1,
+              "followers": 1
+            }
+          }
+        }
+      ]
+    },
+    "challenge_001": {
+      "label": "Day 1: First Challenge",
+      "character": "host",
+      "dialogue": "The first challenge begins. Rank the house from most likely to become famous to least likely. Everyone stares at each other. This is not a game. This is a trap.",
+      "choices": [
+        {
+          "text": "Rank yourself first.",
+          "next": "drama_001",
+          "effects": {
+            "stats": {
+              "popularity": 2,
+              "threat": 2,
+              "followers": 3
+            }
+          }
+        },
+        {
+          "text": "Rank Lexi first to flatter her.",
+          "next": "drama_001",
+          "effects": {
+            "relationships": {
+              "lexi": 2
+            },
+            "stats": {
+              "influence": 1
+            }
+          }
+        },
+        {
+          "text": "Rank Nova last because chaos.",
+          "next": "drama_001",
+          "effects": {
+            "relationships": {
+              "nova": -2
+            },
+            "stats": {
+              "drama": 3,
+              "followers": 2
+            }
+          }
+        },
+        {
+          "text": "Play it safe and stay in the middle.",
+          "next": "drama_001",
+          "effects": {
+            "stats": {
+              "trust": 2,
+              "threat": -2
+            }
+          }
+        }
+      ]
+    },
+    "drama_001": {
+      "label": "Day 1: Rumor Spark",
+      "character": "lexi",
+      "dialogue": "Later, Lexi whispers that someone called Marcus 'all muscles, no strategy.' Marcus hears half of it. The kitchen goes silent.",
+      "choices": [
+        {
+          "text": "Spread it louder.",
+          "next": "ending_001",
+          "effects": {
+            "stats": {
+              "drama": 4,
+              "followers": 4,
+              "threat": 3
+            },
+            "relationships": {
+              "marcus": -1
+            }
+          }
+        },
+        {
+          "text": "Stay out of it.",
+          "next": "ending_001",
+          "effects": {
+            "stats": {
+              "trust": 2,
+              "threat": -1
+            }
+          }
+        },
+        {
+          "text": "Expose Lexi as the source.",
+          "next": "ending_001",
+          "effects": {
+            "stats": {
+              "influence": 3,
+              "drama": 2,
+              "threat": 1
+            },
+            "relationships": {
+              "lexi": -3,
+              "marcus": 1
+            }
+          }
+        },
+        {
+          "text": "Turn it into a joke for the cameras.",
+          "next": "ending_001",
+          "effects": {
+            "stats": {
+              "popularity": 2,
+              "followers": 3,
+              "drama": 1
+            }
+          }
+        }
+      ]
+    },
+    "ending_001": {
+      "type": "summary",
+      "label": "Day 1 Complete",
+      "dialogue": "Day 1 complete."
+    }
+  }
+}

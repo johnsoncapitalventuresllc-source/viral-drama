@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viral Drama | DramaPop TV</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main id="app" class="app-shell">
+    <section id="titleScreen" class="screen active">
+      <div class="brand-chip">DramaPop TV Presents</div>
+      <h1>Viral Drama</h1>
+      <p class="tagline">One house. One hundred cameras. No privacy.</p>
+      <div class="button-stack">
+        <button id="newGameBtn" class="primary-btn">New Game</button>
+        <button id="continueBtn" class="secondary-btn">Continue</button>
+        <button id="resetBtn" class="ghost-btn">Reset Save</button>
+      </div>
+    </section>
 
+    <section id="createScreen" class="screen">
+      <div class="panel">
+        <h2>Create Your Contestant</h2>
+
+        <label for="playerName">Contestant Name</label>
+        <input id="playerName" type="text" maxlength="18" placeholder="Enter name" />
+
+        <h3>Pronouns</h3>
+        <div class="choice-grid" id="pronounOptions">
+          <button data-pronouns="he/him">He/Him</button>
+          <button data-pronouns="she/her">She/Her</button>
+          <button data-pronouns="they/them">They/Them</button>
+        </div>
+
+        <h3>Avatar</h3>
+        <div class="avatar-grid" id="avatarOptions"></div>
+
+        <h3>Contestant Type</h3>
+        <div class="choice-grid" id="archetypeOptions"></div>
+
+        <button id="startStoryBtn" class="primary-btn full-width">Enter the House</button>
+      </div>
+    </section>
+
+    <section id="gameScreen" class="screen">
+      <div id="backgroundStage" class="background-stage">
+        <div class="top-hud">
+          <span id="sceneLabel">Day 1</span>
+          <button id="saveBtn" class="mini-btn">Save</button>
+        </div>
+
+        <aside id="statsPanel" class="stats-panel"></aside>
+
+        <div id="portrait" class="portrait-card">
+          <div id="portraitInitials">VD</div>
+        </div>
+
+        <div class="dialogue-box">
+          <div id="speakerName" class="speaker-name">Producer</div>
+          <p id="dialogueText"></p>
+          <div id="choices" class="choices"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="summaryScreen" class="screen">
+      <div class="panel">
+        <h2>Day 1 Complete</h2>
+        <p>You survived your first day inside the Viral Drama house.</p>
+        <div id="finalStats" class="final-stats"></div>
+        <button id="backToTitleBtn" class="primary-btn full-width">Back to Title</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/state.js"></script>
+  <script src="js/saveSystem.js"></script>
+  <script src="js/storyEngine.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
